@@ -84,6 +84,10 @@
     4. Schema : schema maps to a MongoDB collection and defines the shape of the documents within that collection.
     5. Model
 
+    Multer : a node.js middleware for handling multipart/form-data, which is primarily used for uploading files.
+    --------
+
+    1. 
 
 
 
