@@ -17,6 +17,9 @@ router.get('/user/all-projects',jwtMiddleware,projectController.allUserProjects)
 router.get('/projects/all',jwtMiddleware,projectController.getallProjects)
 //gethomeprojects
 router.get('/projects/home-projects',projectController.getHomeProjects)
+//editporiject
+router.put('/projects/edit/:id',jwtMiddleware,multerConfig.single("projectImage"),projectController.editProjectController)
+
 
 //export router
 module.exports = router
