@@ -21,6 +21,8 @@ router.get('/projects/home-projects',projectController.getHomeProjects)
 router.put('/projects/edit/:id',jwtMiddleware,multerConfig.single("projectImage"),projectController.editProjectController)
 //deleteproject
 router.delete('/projects/remove/:id',jwtMiddleware,projectController.deleteProjectController)
+//updateuser
+router.put('/user/edit',jwtMiddleware,multerConfig.single("profileImage"),userController.editUser)
 
 //export router
 module.exports = router
